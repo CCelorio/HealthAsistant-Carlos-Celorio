@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eleccion.SeguimientoFisicoActivity">
+
+    <TextView
+        android:id="@+id/nombreUsuarioTextView2"
+        android:layout_width="174dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/btnCerrarSesion"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/_326055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#E82020"
+        android:onClick="cerrarSesion"
+        android:padding="16dp"
+        android:radius="8dp"
+        android:text="Cerrar Sesión"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/B_atras_Seguimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#DC2214"
+        android:text="Atras"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonCalculoPeso"
+        android:layout_width="270dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="71dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Calculo de Peso"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botonHorasSueno"
+        android:layout_width="270dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="71dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Seguimiento Horas de Sueño"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonCalculoPeso" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="365dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif"
+        android:text="SEGUIMIENTO FISICO"
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuarioTextView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

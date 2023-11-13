@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado normal del botón (sin interacción) -->
+    <item android:state_enabled="true">
+        <shape
+            android:shape="oval">
+            <solid android:color="#FFA500" />  <!-- Cambia el color de fondo a Naranja (#FFA500) -->
+            <stroke android:color="#000000" android:width="2dp" />  <!-- Borde negro de 2dp -->
+        </shape>
+    </item>
+
+    <!-- Estado de presionado del botón (al pasar por encima) -->
+    <item android:state_pressed="true">
+        <shape
+            android:shape="oval">
+            <solid android:color="#FFD700" />  <!-- Cambia el color de fondo al presionar a un tono más claro de Naranja (#FFD700) -->
+            <stroke android:color="#000000" android:width="2dp" />
+        </shape>
+    </item>
+</selector>
